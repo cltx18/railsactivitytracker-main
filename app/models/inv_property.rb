@@ -1,0 +1,2 @@
+class InvProperty < ApplicationRecord
+end

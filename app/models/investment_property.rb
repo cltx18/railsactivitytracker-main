@@ -1,0 +1,2 @@
+class InvestmentProperty < ApplicationRecord
+end

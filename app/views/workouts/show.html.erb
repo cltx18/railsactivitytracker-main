@@ -1,0 +1,33 @@
+
+<p>
+  <strong>Date:</strong>
+  <%= @workout.day %>
+</p>
+
+<p>
+  <strong>Activity Name:</strong>
+  <%= @workout.workout_name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @workout.workout_type %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @workout.location %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @workout.time %>
+</p>
+
+<p>
+  <strong>Intensity:</strong>
+  <%= @workout.intensity %>
+</p>
+
+<%= link_to 'Edit', edit_workout_path(@workout), class:"btn btn-dark" %>
+<%= link_to 'Back', workouts_path, class:"btn btn-secondary" %>

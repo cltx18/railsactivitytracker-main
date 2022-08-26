@@ -1,0 +1,2 @@
+module MypropertiesHelper
+end

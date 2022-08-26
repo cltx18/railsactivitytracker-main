@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @item.amount %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @item.category %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @item.location %>
+</p>
+
+<p>
+  <strong>Date added:</strong>
+  <%= @item.date_added %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item), class:"btn btn-primary" %> |
+<%= link_to 'Back', items_path, class:"btn btn-primary" %>

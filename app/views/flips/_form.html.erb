@@ -1,0 +1,202 @@
+<%= form_with(model: flip) do |form| %>
+  <% if flip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(flip.errors.count, "error") %> prohibited this flip from being saved:</h2>
+
+      <ul>
+        <% flip.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_one %>
+    <%= form.text_field :address_one %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_two %>
+    <%= form.text_field :address_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_city %>
+    <%= form.text_field :address_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_state %>
+    <%= form.text_field :address_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_county %>
+    <%= form.text_field :address_county %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beds %>
+    <%= form.text_field :beds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :baths %>
+    <%= form.text_field :baths %>
+  </div>
+
+  <div class="field">
+    <%= form.label :square_foot %>
+    <%= form.text_field :square_foot %>
+  </div>
+
+  <div class="field">
+    <%= form.label :overview %>
+    <%= form.text_field :overview %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feature_one %>
+    <%= form.text_field :feature_one %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feature_two %>
+    <%= form.text_field :feature_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feature_three %>
+    <%= form.text_field :feature_three %>
+  </div>
+
+  <div class="field">
+    <%= form.label :home_value %>
+    <%= form.text_field :home_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tax_history %>
+    <%= form.text_field :tax_history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_history %>
+    <%= form.text_field :price_history %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monthly_cost %>
+    <%= form.text_field :monthly_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nearby_schools %>
+    <%= form.text_field :nearby_schools %>
+  </div>
+
+  <div class="field">
+    <%= form.label :legal_protections %>
+    <%= form.text_field :legal_protections %>
+  </div>
+
+  <div class="field">
+    <%= form.label :home_type %>
+    <%= form.text_field :home_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_built %>
+    <%= form.text_field :year_built %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hoa_string %>
+    <%= form.text_field :hoa_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_per_square_foot %>
+    <%= form.text_field :price_per_square_foot %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flooring %>
+    <%= form.text_field :flooring %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heating %>
+    <%= form.text_field :heating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cooling %>
+    <%= form.text_field :cooling %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lot_size %>
+    <%= form.text_field :lot_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lot_features_string %>
+    <%= form.text_field :lot_features_string %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foundation %>
+    <%= form.text_field :foundation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roof_type %>
+    <%= form.text_field :roof_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roof_age %>
+    <%= form.text_field :roof_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :water_util %>
+    <%= form.text_field :water_util %>
+  </div>
+
+  <div class="field">
+    <%= form.label :electricity_util %>
+    <%= form.text_field :electricity_util %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sewer_util %>
+    <%= form.text_field :sewer_util %>
+  </div>
+
+  <div class="field">
+    <%= form.label :association_name %>
+    <%= form.text_field :association_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :annual_taxes %>
+    <%= form.text_field :annual_taxes %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

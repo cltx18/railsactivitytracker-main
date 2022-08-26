@@ -1,0 +1,2 @@
+module InvPropertiesHelper
+end

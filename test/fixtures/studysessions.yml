@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studytype: MyString
+  category: MyString
+  duration: MyString
+  content: MyText
+  name: MyString
+  intensity: MyString
+
+two:
+  studytype: MyString
+  category: MyString
+  duration: MyString
+  content: MyText
+  name: MyString
+  intensity: MyString

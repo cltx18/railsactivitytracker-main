@@ -1,0 +1,10 @@
+<h2>Dashboard</h2>
+<p>Keep track of your activities.</p>
+<%= pie_chart Workout.group(:workout_type).count %>
+<p>Quick Add</p>
+
+        <%= link_to "Activity", new_workout_path, class:"btn btn-dark" %>
+        <%= link_to "Expense", new_expense_path, class:"btn btn-dark" %>
+        <%= link_to "Item", new_item_path, class:"btn btn-dark" %>
+        <%= link_to "Mileage", new_item_path, class:"btn btn-dark" %>
+

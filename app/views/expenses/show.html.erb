@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+  <h1 class="display-5"><%= @expense.name %>
+  <p class="lead"> Vendor: <%= @expense.vendor %></p>
+  <p class="lead"> Qty: <%= @expense.qty %></p>
+  <p class="lead"> Cost: <%= @expense.cost %></p>
+  <p class="lead"> Unit: <%= @expense.unit %></p>
+  <p class="lead"> Added: <%= @expense.date_added %></p>
+  <p class="lead"> Location: <%= @expense.location %></p>
+  <p class="lead"> Category: <%= @expense.category %></p>
+  <p class="lead"> Description:   <%= @expense.description %></p>
+  
+
+  <div class="container">
+  <div class="row">
+    <div class="col-9">.col-9</div>
+    <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+    <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_expense_path(@expense), class:"btn btn-primary" %> |
+<%= link_to 'Back', expenses_path, class:"btn btn-primary" %>
+</div>
+
