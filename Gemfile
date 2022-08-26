@@ -27,6 +27,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :production do 
   gem 'pg', '~> 1.2', '>=1.2.3'
+    gem 'devise', '~> 4.8'
+
   #gem 'rails_12_factor', '0.0.2'
 end
 
@@ -47,7 +49,6 @@ group :development do
   gem 'chartkick'
   gem 'sqlite3', '~> 1.4'
 
-  gem 'devise', '~> 4.8'
 end
 
 group :test do
